@@ -1,0 +1,238 @@
+/*Style =By Julio Ghisloti=*/
+
+
+/* Base ========================================================================================  */
+	body{margin: 0; }
+
+	h2, h3, p{font-weight: normal; margin: 0;}
+
+/* Links ======================================================================================== */
+
+	a, a:hover, a:visited, a:link{text-decoration: none; color: #000;}
+	a{
+		transition: all .5s ease-in-out;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+	}
+	a:hover{
+		color: #006530;
+		text-shadow: 0 0 10px #84C225;
+	}
+
+/* Animation ==================================================================================== */
+
+	@-webkit-keyframes down {
+		from 	{ margin-top: -200px; }
+		to  	{ margin-left: 0; }
+	}
+	@-moz-keyframes down {
+		from 	{ margin-top: -200px; }
+		to  	{ margin-left: 0; }
+	}
+	@keyframes down {
+		from 	{ margin-top: -200px; }
+		to  	{ margin-left: 0; }
+	}
+
+	@-webkit-keyframes up {
+		from 	{ margin-bottom: -200px; }
+		to  	{ margin-left: 0; }
+	}
+	@-moz-keyframes up {
+		from 	{ margin-bottom: -200px; }
+		to  	{ margin-left: 0; }
+	}
+	@keyframes up {
+		from 	{ margin-bottom: -200px; }
+		to  	{ margin-left: 0; }
+	}
+
+/* Box's ======================================================================================== */
+	.box-content-all{
+		display: block;
+		height: 700px;
+		position: relative;
+		width: 100%;
+	}
+
+	.box-img{
+		background-size:100%;
+		background-position: 0 -200px;
+		background-repeat: no-repeat;
+		height: 300px;
+		position: relative;
+		width: 100%;
+	}
+
+	.box-text{
+		color: #FFF;
+		font-family: "humnst777_lt_btlight";
+		font-size: 2.5em;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		text-align: left;
+		text-shadow: 0 0 10px #000;
+		top: 50px;
+		width: 1228px;
+	}
+
+	.box-content{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 25px;
+		position: relative;
+		width: 1228px;
+	}
+
+	.title{
+		font-family: "humnst777_lt_btlight";
+		font-size: 1.9em;
+	}
+
+	.text{
+		display: block;
+		font-family: "humnst777_lt_btlight";
+		font-size: 1em;
+		text-align: justify;
+	}
+
+/* Menu ========================================================================================= */
+	#menu-all{
+		background-color: #FFF;
+		box-shadow: 0 0 15px #000;
+		display: block;
+		height: 167px;
+		width: 100%;
+		position: absolute;
+		z-index: 9999;
+
+		-webkit-animation-name: down;
+		-webkit-animation-duration: 1s;
+		-moz-animation-name: down;
+		-moz-animation-duration: 1s;
+		animation-name: down;
+		animation-duration: 1s;
+
+	}
+
+	#menu-in{
+		height: 167px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 1228px;
+	}
+
+	#logo{
+		height: 124px;
+		left: 0;
+		margin-top: -62px;
+		position: absolute;
+		top: 50%;
+		width: 200px;
+	}
+
+	#menu{
+		font-family: "humnst777_lt_btlight";
+		font-size: 1em;
+		font-weight: bold;
+		height: 30px;
+		margin-top: -15px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		width: 369px;
+	}
+
+	#menu ul{margin: 0; padding: 0;}
+	#menu li{
+		display: inline-block; 
+		padding-left: 15px;
+
+		/* IE 7 FIX */
+			*display: inline;
+		/* IE 7 FIX */
+	}
+
+/* Hom=========================================================================================== */
+	#top-all{
+		background-attachment: fixed;
+		background-image: url("../img/bk/bk_1.jpg"); 
+		background-size: 100%;
+		position: relative;
+		width: 100%;
+		z-index: 9998;
+	}
+	#top-text{
+		color: #FFF;
+		font-family: "humnst777_lt_btlight";
+		font-size: 2.5em;
+		height: 128px;
+		left: 50%;
+		margin-left: -397px;
+		margin-top: -64px;
+		position: absolute;
+		text-align: center;
+		text-shadow: 0 0 10px #000;
+		top: 50%;
+		width: 800px;
+	}
+	#base-top{
+		background: rgba(255, 255, 255, 0.9);
+		bottom: 0;
+		box-shadow: 0 0 20px #000;
+		display: block;
+		height: 50px;
+		position: absolute;
+		width: 100%;
+		z-index: 9999;
+
+		-webkit-animation-name: up;
+		-webkit-animation-duration: 1s;
+		-moz-animation-name: up;
+		-moz-animation-duration: 1s;
+		animation-name: up;
+		animation-duration: 1s;
+s
+	}
+
+/* Empresa ====================================================================================== */
+	#empresa-img{
+		background-image: url("../img/bk/bk_2.jpg");
+	}
+
+	.empresa-content-in{
+		display: inline-block;
+		margin-right: 35px;
+		position: relative;
+		width: 380px;
+
+		/* IE 7 FIX */
+			*display: inline;
+		/* IE 7 FIX */
+
+	}
+	
+/* Atuacao ====================================================================================== */
+	#atuacao-img{
+		background-image: url("../img/bk/bk_3.jpg");
+	}
+
+/* Clientes====================================================================================== */
+	#clientes-img{
+		background-image: url("../img/bk/bk_4.jpg");
+	}
+
+/* Width < ====================================================================================== */
+	@media screen and (max-width: 1260px){
+		#menu-in{width: 950px;}	
+		.box-text{width: 950px;}
+		.box-content-all{height: 850px;}
+		.box-content{width: 950px;}
+		.empresa-content-in{
+			width: 800px; margin-bottom: 15px;
+		}
+	}

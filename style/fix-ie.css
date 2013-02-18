@@ -1,0 +1,27 @@
+/* Fix IE Bugs */
+
+/* Set Width ====================================================== */
+	#menu-in{width: 950px;}	
+	#base-top{background-color: #FFF; filter:alpha(opacity=90);}
+	.box-text{width: 950px;}
+	.box-content-all{height: 850px;}
+	.box-content{width: 950px;}
+	.empresa-content-in{width: 800px; margin-bottom: 15px;}
+
+/* Fix IE Background Bug ========================================== */
+	.box-img{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-color: #BBB;
+		height: 300px;
+		position: relative;
+		width: 100%;
+	}
+
+	#empresa-img{background-image: url("../img/bk/bk-ie/bk_2.jpg");}
+	#atuacao-img{background-image: url("../img/bk/bk-ie/bk_3.jpg");}
+	#clientes-img{background-image: url("../img/bk/bk-ie/bk_4.jpg");}
+.title{
+		font-family: 'tall_films_expandedregular';
+		
+	}
