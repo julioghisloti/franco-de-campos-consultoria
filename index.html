@@ -7,30 +7,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0" />
 	
 	<!--[if IE]>
-	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
-	<meta content='IE=7' http-equiv='X-UA-Compatible' />
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+		<meta content='IE=7' http-equiv='X-UA-Compatible' />
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<!--[if IE 8]> <link rel="stylesheet" href="style/fix-ie.css" type="text/css"/> <![endif]-->
+	<!--[if IE 7]> <link rel="stylesheet" href="style/fix-ie.css" type="text/css"/> <![endif]-->
 
 	
 	<!-- Style -->
 	<link rel="stylesheet" href="style/style.css" type="text/css"/>
-
-	<!-- Font -->
-	<link rel="stylesheet" type="text/css" href="style/fonts/font.css" />
-	
-	<!-- Script -->
-	<script type='text/javascript' src="js/jquery.js"></script>
-	<script type='text/javascript' src="js/main.js"></script>
-	
-	
-	<!--[if IE 8]> <link rel="stylesheet" href="style/fix-ie.css" type="text/css"/> <![endif]-->
-	
-	<!--[if IE 7]> <link rel="stylesheet" href="style/fix-ie.css" type="text/css"/> <![endif]-->
 	
 </head>
 <body>
-	
+
+	<div id="carregando-all">
+		<div id="carregando">
+			<script type="text/javascript">
+				window.onload = function(){
+					var carregador = document.getElementById("carregando-all");
+					carregador.parentNode.removeChild(carregador);
+				}
+			</script>
+		</div>
+	</div>
+
+	<div id="body">
 	<!-- start -Top- ============================================================================-->
 	
 		<!-- start -Menu- -->
@@ -156,8 +158,8 @@
 			<div class="box-img" id="atuacao-img">
 				<div class="box-text">
 					<h3>
-						“Começo, meio e fim. <br /> 
-						auxiliando você e sua empresa <br /> em todas as etapas”
+						Começo, meio e fim. <br /> 
+						auxiliando você e sua empresa <br /> em todas as etapas
 					</h3>
 				</div>
 			</div>
@@ -171,7 +173,7 @@
 			<div class="box-img" id="clientes-img">
 				<div class="box-text">
 					<h3>
-						Veja alguns de nosso clientes, <br/>							
+						Veja alguns de nosso clientes <br/>							
 						e torne-se um!
 					</h3>
 				</div>
@@ -187,13 +189,19 @@
 				<div class="box-text">
 					<h3>
 						Fala com agente. <br/>							
-						Temos uma solução para seu problema!
+						Temos uma solução para você!
 					</h3>
 				</div>
 			</div>
 				
 		</section>
 	<!-- start -Contato- ========================================================================-->
-	
+
+	</div>
+
+	<!-- Script -->
+	<script type='text/javascript' src="js/jquery.js"></script>
+	<script type='text/javascript' src="js/main.js"></script>
+
 </body>
 </html>
